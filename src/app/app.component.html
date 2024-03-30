@@ -19,7 +19,7 @@
 <main>
   <section class="card-view card-1">
     <div>
-      <img src="./../assets/bitmap.png" class="profile-pic" />
+      <img src="./assets/bitmap.png" class="profile-pic" />
       <h3>Siddarth.G</h3>
       <h4>Portfolio</h4>
       <p>Frontend Web Developer & Ui / Ux</p>
@@ -29,22 +29,38 @@
 
   <section
     class="card-view card-2"
-    [ngClass]="{ 'card-active-1': isCardActive }"
-    (click)="cardActive()"
+    [ngClass]="{ 'card-active-1': isCardActiveLeft }"
+    (click)="cardActiveLeft()"
   >
-    <div>
-      <h4><i class="fa-solid fa-graduation-cap"></i></h4>
-      <p>St.Peters University | B.com</p>
-      <p>Ecrrede | Web Development</p>
+    <div class="content">
+      <div class="title">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Graduation</span>
+      </div>
+      <ul>
+        <li>St.Peters University | <span class="color-blue">B.com</span></li>
+        <li>Ecrrede | <span class="color-blue">Web Development</span></li>
+      </ul>
     </div>
     <button>View all</button>
   </section>
 
-  <section class="card-view card-3">
-    <div>
-      <h4><i class="fa-solid fa-book"></i></h4>
-      <p>St.Peters University | B.com</p>
+  <section
+    class="card-view card-3"
+    [ngClass]="{ 'card-active-2': isCardActiveRight }"
+    (click)="cardActiveRight()"
+  >
+    <div class="content">
+      <div class="title">
+        <i class="fa-solid fa-book"></i>
+        <span>Course</span>
+      </div>
+      <ol>
+        <li class="progressBar-1">Html, Css, Bootstrap</li>
+        <li class="progressBar-2">Javascript</li>
+        <li class="progressBar-3">Angular</li>
+        <li class="progressBar-4">ReactJs & React Native</li>
+      </ol>
     </div>
-    <button>View all</button>
   </section>
 </main>
