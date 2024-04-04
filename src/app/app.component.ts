@@ -7,16 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SGPortfolio';
-  isCardActiveLeft: boolean = false;
-  isCardActiveRight: boolean = false;
-
-  cardActiveLeft() {
-    this.isCardActiveLeft = true;
-    console.log('left');
-  }
-
-  cardActiveRight() {
-    this.isCardActiveRight = true;
-    console.log('right');
-  }
 }

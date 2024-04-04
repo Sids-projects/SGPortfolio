@@ -1,1 +1,65 @@
-<p>blog works!</p>
+<section class="blog-head">
+  <p>Our Blog</p>
+  <h2>Stories and Ideas</h2>
+</section>
+
+<section class="blog-content">
+  <div class="cardView-xl">
+    <img [src]="'./../../../assets/blog/' + blogContent.blogPost.img" />
+    <div class="cardView-content">
+      <h3>{{ blogContent.blogPost.title }}</h3>
+      <p>
+        {{ blogContent.blogPost.content }}
+      </p>
+    </div>
+  </div>
+  <div class="card-column">
+    <div class="cardView-xxl" *ngFor="let data of blogContent.news">
+      <img [src]="'./../../../assets/blog/' + data.img" />
+      <div class="cardView-content">
+        <h3>{{ data.title }}</h3>
+        <p>
+          {{ data.content }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="news-head">
+  <p>Get updates from SoleJourney</p>
+  <h2>Updates & News</h2>
+</div>
+
+<section class="news-container">
+  <div class="news-list">
+    <div *ngFor="let data of blogContent.newsPostList" class="cardView-xxxl">
+      <div class="news-list-head">
+        <p class="news-tags">{{ data.tags }}</p>
+        <p class="news-date">{{ data.date }}</p>
+      </div>
+      <div class="news-list-content">
+        <h3>{{ data.title }}</h3>
+        <p class="news-content">{{ data.content }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="discounts">
+    <div class="cardView-sm">
+      <h3>Nike Shoes</h3>
+      <p>30% Offer</p>
+      <div class="img-div">
+        <img src="./../../../assets/blog/discount-1.jpg" />
+      </div>
+      <div class="overlay"></div>
+    </div>
+    <div class="cardView-sm">
+      <h3>Addidas Shoes</h3>
+      <p>20% Offer</p>
+      <div class="img-div">
+        <img src="./../../../assets/blog/discount-2.jpg" />
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </div>
+</section>

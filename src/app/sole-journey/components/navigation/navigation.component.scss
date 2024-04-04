@@ -1,0 +1,218 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    button {
+      background-color: transparent;
+      border: none;
+    }
+
+    i {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 800;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    a {
+      text-decoration: none;
+      text-wrap: nowrap;
+      font-weight: 500;
+      color: black;
+      position: relative;
+    }
+
+    .link-active:before {
+      content: "";
+      width: 90%;
+      height: 3px;
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      border-radius: 50px;
+    }
+  }
+
+  .nav-menus {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+
+    .dropdown a {
+      color: black !important;
+    }
+
+    i {
+      font-size: 20px;
+    }
+
+    .dropdown-content {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      padding: 14px;
+
+      .dd-Title {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 10px !important;
+      }
+
+      .dd-Items {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 12px;
+        height: 130px;
+        overflow-y: scroll;
+      }
+
+      .dd-itemList {
+        width: 126px;
+        height: 126px;
+        background-color: #f1f1f1;
+        border-radius: 6px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+          width: 60px;
+        }
+
+        .dd-itemListTitle {
+          width: 100%;
+          font-size: 12px;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          i {
+            font-size: 12px;
+          }
+        }
+
+        .dd-itemName {
+          font-size: 12px;
+          font-size: 500;
+        }
+      }
+
+      button {
+        width: 100%;
+        font-size: 14px;
+        border: none;
+        padding: 8px 16px !important;
+        border-radius: 6px;
+        background-color: black;
+        color: white;
+        margin-top: 16px !important;
+      }
+    }
+  }
+}
+
+.offcanvas {
+  background: linear-gradient(
+      45deg,
+      #0000 calc(25% / 3),
+      #fbfbfb 0 calc(50% / 3),
+      #0000 0 calc(250% / 3),
+      #fbfbfb 0 calc(275% / 3),
+      #0000 0
+    ),
+    linear-gradient(
+      45deg,
+      #fbfbfb calc(25% / 3),
+      #0000 0 calc(50% / 3),
+      #fbfbfb 0 25%,
+      #0000 0 75%,
+      #fbfbfb 0 calc(250% / 3),
+      #0000 0 calc(275% / 3),
+      #fbfbfb 0
+    ),
+    linear-gradient(
+      -45deg,
+      #0000 calc(25% / 3),
+      #fbfbfb 0 calc(50% / 3),
+      #0000 0 calc(250% / 3),
+      #fbfbfb 0 calc(275% / 3),
+      #0000 0
+    ),
+    linear-gradient(
+        -45deg,
+        #fbfbfb calc(25% / 3),
+        #0000 0 calc(50% / 3),
+        #fbfbfb 0 25%,
+        #0000 0 75%,
+        #fbfbfb 0 calc(250% / 3),
+        #0000 0 calc(275% / 3),
+        #fbfbfb 0
+      )
+      #ffffff;
+  background-size: 200px 200px;
+  background-position: 0 0, 100px 100px;
+
+  .offcanvas-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.119);
+  }
+
+  .offcanvas-title {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  .leftNav-content {
+    .leftNav-title {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 6px !important;
+    }
+
+    .list-group {
+      margin-bottom: 14px !important;
+
+      img {
+        width: 20px;
+        margin-right: 6px;
+      }
+    }
+
+    .list-group-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      i {
+        color: #d5d5d5;
+      }
+    }
+  }
+}

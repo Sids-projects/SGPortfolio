@@ -9,3 +9,53 @@
 body {
   font-family: "Manrope", sans-serif;
 }
+
+.mat-typography h1,
+.mat-typography h2,
+.mat-typography h3,
+.mat-typography h4,
+.mat-typography h5,
+.mat-typography h6,
+.mat-typography p,
+li {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: "Manrope", sans-serif !important;
+}
+
+button,
+input {
+  font-family: "Manrope", sans-serif !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// Common
+.curv_rt {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  border-right: 3px solid rgba(0, 0, 0, 0.053);
+  border-top: 3px solid rgba(0, 0, 0, 0.053);
+  border-radius: 0 20px 0 0;
+}
+
+.curv_lb {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  width: 20px;
+  height: 20px;
+  border-left: 3px solid rgba(0, 0, 0, 0.053);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.053);
+  border-radius: 0 0 0 20px;
+}

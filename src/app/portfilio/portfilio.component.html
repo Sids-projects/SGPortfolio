@@ -1,0 +1,60 @@
+<main>
+  <section class="card_view card_1">
+    <div>
+      <header>
+        <i class="fa-solid fa-face-grin-wide"></i>
+        <p>About</p>
+      </header>
+      <div class="content_1">
+        <img src="./assets/bitmap.png" class="profile_pic" />
+        <h3>Siddarth.G</h3>
+        <h4>Portfolio</h4>
+        <p>Frontend Web Developer & Ui / Ux</p>
+      </div>
+    </div>
+    <button>View all</button>
+  </section>
+
+  <section
+    class="card_view"
+    [ngClass]="{ card_2_active: cardTwoActive, card_2: !cardTwoActive }"
+    (click)="cardTwo()"
+  >
+    <div>
+      <header>
+        <i class="fa-solid fa-graduation-cap"></i>
+        <p>Graduation</p>
+      </header>
+      <ul class="content_2">
+        <li>St.Peters University | B.com</li>
+        <li>Ecrrede | Web Development</li>
+      </ul>
+      <header class="mt-4">
+        <i class="fa-solid fa-book"></i>
+        <p>Course</p>
+      </header>
+      <ul class="content_3">
+        <li><span class="bar-1"></span>Html, Css, Bootstrap</li>
+        <li><span class="bar-2"></span>Javascript</li>
+        <li><span class="bar-3"></span>Angular</li>
+        <li><span class="bar-4"></span>ReactJs & React Native</li>
+      </ul>
+    </div>
+    <button>Certificates</button>
+  </section>
+
+  <section
+    class="card_view"
+    [ngClass]="{ card_3_active: cardThreeActive, card_3: !cardThreeActive }"
+    (click)="cardThree()"
+  >
+    <div>
+      <header>
+        <i class="fa-solid fa-graduation-cap"></i>
+        <p>Projects</p>
+      </header>
+      <div class="content_4"></div>
+    </div>
+    <button>Certificates</button>
+  </section>
+</main>
