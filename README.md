@@ -1,27 +1,9 @@
 # SGPortfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
+Welcome to my portfolio! As a frontend web developer and UI/UX designer, I specialize in crafting beautiful and user-friendly digital experiences. With expertise in Angular, I have created this portfolio to showcase my skills, projects, and achievements.
 
-## Development server
+Explore my portfolio to learn more about me, including my background, expertise, and passion for creating stunning designs and seamless user interfaces. Browse through my projects to see examples of my work and the technologies I've used to bring them to life.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Whether you're a potential client, collaborator, or fellow developer, I invite you to connect with me to discuss how we can work together to create innovative solutions and captivating user experiences.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Thank you for visiting, and I look forward to connecting with you soon!
