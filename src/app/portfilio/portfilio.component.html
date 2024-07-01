@@ -1,4 +1,6 @@
-<main>
+<main class="portfolio" *ngIf="portfolioMainIf">
+  <section class="overlay"></section>
+
   <section class="card_view card_1">
     <div>
       <header>
@@ -53,8 +55,30 @@
         <i class="fa-solid fa-graduation-cap"></i>
         <p>Projects</p>
       </header>
-      <div class="content_4"></div>
+      <div class="content_4">
+        <div class="project_container">
+          <div class="project">
+            <div class="project-logo">
+              <img src="./assets/sole-journey/icons/soleJourney.svg" />
+            </div>
+            <div class="project_content">
+              <h5>Sole Journey</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur.</p>
+              <div class="d-flex gap-2">
+                <button>Overview</button>
+                <button (click)="soleJourneyIf()" routerLink="sj-router">
+                  View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <button>Certificates</button>
   </section>
+</main>
+
+<main *ngIf="soleJourneyMainIf">
+  <router-outlet></router-outlet>
 </main>

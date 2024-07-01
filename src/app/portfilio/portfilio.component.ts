@@ -11,6 +11,10 @@ export class PortfilioComponent {
   cardTwoActive: boolean = false;
   cardThreeActive: boolean = false;
 
+  // If's
+  portfolioMainIf: boolean = true;
+  soleJourneyMainIf: boolean = false;
+
   constructor(private dataService: DataService) {
     this.portfolioContent = this.dataService.portfolioContent;
   }
@@ -21,5 +25,10 @@ export class PortfilioComponent {
 
   cardThree() {
     this.cardThreeActive = !this.cardThreeActive;
+  }
+
+  soleJourneyIf() {
+    this.portfolioMainIf = false;
+    this.soleJourneyMainIf = true;
   }
 }
